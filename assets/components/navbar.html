@@ -1,0 +1,93 @@
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Mobile</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+
+            <ul class="navbar-nav ms-auto me-lg-3">
+                <li class="nav-item">
+                    <a class="nav-link active fw-bold" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="all.html">Category</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="all.html">All</a></li>
+                        <li><a class="dropdown-item" href="samsung.html">Samsung</a></li>
+                        <li><a class="dropdown-item" href="iphone.html">iPhone</a></li>
+                        <li><a class="dropdown-item" href="redmi.html">Redmi</a></li>
+                        <li><a class="dropdown-item" href="realme.html">Realme</a></li>
+                        <li><a class="dropdown-item" href="oppo.html">Oppo</a></li>
+                        <li><a class="dropdown-item" href="vivo.html">Vivo</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="support.html">Support</a>
+                </li>
+            </ul>
+
+            <form class="mt-2 mt-lg-0 position-relative">
+
+                <input class="form-control pe-5" type="search" placeholder="Search">
+
+                <!-- Search Icon -->
+                <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-3"></i>
+
+            </form>
+
+            <ul class="navbar-nav ms-3" id="authNav">
+
+                <!-- LOGIN -->
+                <li class="nav-item" id="loginNav">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+
+                <!-- SIGNUP -->
+                <li class="nav-item" id="signupNav">
+                    <a class="nav-link" href="signup.html">Signup</a>
+                </li>
+
+                <!-- PROFILE -->
+                <li class="nav-item dropdown d-none" id="navProfileItem">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                        <span id="navProfileText">Profile</span>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li>
+                            <span class="dropdown-item-text small text-muted" id="navProfileEmail"></span>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <!-- 🛒 CART -->
+                        <li>
+                            <a class="dropdown-item d-flex justify-content-between align-items-center" href="cart.html">
+                                <span>Cart</span>
+                                <span class="badge bg-warning text-dark" id="cartCount">0</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item text-danger" href="#" id="navLogoutBtn">Logout</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
