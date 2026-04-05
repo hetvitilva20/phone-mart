@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+</head>
+
+<body class="bg-light">
+
+    <div class="container d-flex align-items-center justify-content-center vh-100">
+
+
+        <div class="card shadow p-4" style="width: 100%; max-width: 400px;">
+
+            <h3 class="text-center mb-4">Login</h3>
+
+            <form id="loginForm">
+
+                <!-- Email -->
+                <div class="mb-3">
+                    <label class="form-label">Email address</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter email" required>
+                </div>
+
+                <!-- Password -->
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="Enter password" required>
+                </div>
+
+                <!-- Remember Me -->
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">Remember me</label>
+                </div>
+
+                <!-- Button -->
+                <button type="submit" class="btn btn-primary w-100">Login</button>
+
+            </form>
+
+            <!-- Links -->
+            <div class="text-center mt-3">
+                <p class="mb-1">Don't have an account?</p>
+                <a href="signup.html">Signup</a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/auth.js"></script>
+</body>
+
+</html>

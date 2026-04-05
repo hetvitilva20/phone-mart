@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <div class="container mt-5">
+        <div class="row">
+
+            <!-- LEFT: CART ITEMS -->
+            <div class="col-lg-8">
+                <h4 class="mb-3 mt-5">🛒 Your Cart</h4>
+
+                <div id="cartItems"></div>
+            </div>
+
+            <!-- RIGHT: SUMMARY -->
+            <div class="col-lg-4">
+                <div class="card shadow-sm p-3 mt-5 sticky-top" style="top: 80px;">
+
+                    <h5 class="mb-3">Price Details</h5>
+
+                    <div class="d-flex justify-content-between">
+                        <span>Subtotal</span>
+                        <span>₹<span id="cartSubtotal">0</span></span>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <span>Delivery</span>
+                        <span class="text-success">Free</span>
+                    </div>
+
+                    <hr>
+
+                    <div class="d-flex justify-content-between fw-bold">
+                        <span>Total</span>
+                        <span>₹<span id="cartTotal">0</span></span>
+                    </div>
+
+                    <button class="btn btn-success w-100 mt-3" onclick="goToCheckout()">
+                        Proceed to Checkout
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer-->
+    <div id="footer"></div>
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/cart.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/auth.js"></script>
+</body>
+
+</html>
