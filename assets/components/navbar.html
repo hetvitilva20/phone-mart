@@ -12,13 +12,13 @@
 
             <ul class="navbar-nav ms-auto me-lg-3">
                 <li class="nav-item">
-                    <a class="nav-link active fw-bold" href="index.html">Home</a>
+                    <a class="nav-link navbar-item" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link navbar-item" href="about.html">About</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="all.html">Category</a>
+                    <a class="nav-link navbar-item" href="all.html">Category</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="all.html">All</a></li>
                         <li><a class="dropdown-item" href="samsung.html">Samsung</a></li>
@@ -30,7 +30,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="support.html">Support</a>
+                    <a class="nav-link navbar-item" href="support.html">Support</a>
                 </li>
             </ul>
 
@@ -91,3 +91,13 @@
         </div>
     </div>
 </nav>
+
+<script>
+    const currentPath = window.location.pathname;
+
+    document.querySelectorAll(".navbar-item").forEach(item => {
+        if (item.getAttribute("href") === currentPath) {
+            item.classList.add("active");
+        }
+    });
+</script>

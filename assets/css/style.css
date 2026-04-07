@@ -151,3 +151,13 @@
       font-weight: 700;
   }
 
+
+  .navbar-item{
+    cursor: pointer;
+  }
+
+  .active{
+    /* color: #fff; */
+    font-weight: 700;
+    cursor: pointer;
+  }

@@ -46,3 +46,6 @@ function slide(wrapperId, direction) {
         wrapper.scrollBy({ left: cardWidth * direction, behavior: "smooth" });
     }
 }
+
+
+
